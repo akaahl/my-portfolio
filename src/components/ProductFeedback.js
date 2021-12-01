@@ -6,6 +6,7 @@ import pfaLearnedThree2 from "../assets/pfa-learned-3.2.jpg";
 import pfaLearnedThree3 from "../assets/pfa-learned-3.3.jpg";
 import pfaLearnedFour1 from "../assets/pfa-learned-4.1.jpg";
 import pfaLearnedFour2 from "../assets/pfa-learned-4.2.jpg";
+import gitHubIcon from "../assets/icon-github.svg";
 
 const ProductFeedback = () => {
   return (
@@ -30,7 +31,8 @@ const ProductFeedback = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Github Source Code
+          <img src={gitHubIcon} alt="github" />
+          <span>Github Repo</span>
         </a>
         <a
           href="https://product-feedback-app-alpha.vercel.app/"
@@ -38,7 +40,7 @@ const ProductFeedback = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Live Demo
+          <span>Live Demo</span>
         </a>
       </div>
 

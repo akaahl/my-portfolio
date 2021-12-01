@@ -14,6 +14,7 @@ import iaLearnedThree3 from "../assets/ia-learned-3.3.jpg";
 import iaLearnedFour1 from "../assets/ia-learned-4.1.jpg";
 import iaLearnedFour2 from "../assets/ia-learned-4.2.jpg";
 import iaLearnedFour3 from "../assets/ia-learned-4.3.jpg";
+import gitHubIcon from "../assets/icon-github.svg";
 
 const Invoice = () => {
   return (
@@ -48,7 +49,8 @@ const Invoice = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Source Code
+          <img src={gitHubIcon} alt="github" />
+          <span>Github Repo</span>
         </a>
         <a
           href="https://invoice-app-react-six.vercel.app/"
@@ -56,7 +58,7 @@ const Invoice = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Demo
+          <span>Live Demo</span>
         </a>
       </div>
 

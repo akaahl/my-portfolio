@@ -274,13 +274,21 @@ const StyledWrapper = styled(motion.div)`
         font-size: 14px;
         font-weight: 600;
         margin: 0 20px;
-        padding: 12px 20px;
+        height: 45px;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 5px;
         transition: all 0.1s ease-in-out;
 
         &.github {
           background-color: #373b53;
           color: lightgray;
+
+          span {
+            margin-left: 10px;
+          }
         }
 
         &.demo {
@@ -444,7 +452,22 @@ const StyledWrapper = styled(motion.div)`
       .links {
         a {
           padding: 10px 15px;
+          height: initial;
+          width: initial;
           margin: 0;
+          span {
+            font-size: 12px;
+          }
+
+          &.github {
+            img {
+              display: none;
+            }
+
+            span {
+              margin-left: 0;
+            }
+          }
 
           &.demo {
             margin-left: 20px;

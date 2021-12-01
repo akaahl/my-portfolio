@@ -7,6 +7,7 @@ import aecLearnedThree2 from "../assets/aec-learned-3.2.jpg";
 import aecLearnedThree3 from "../assets/aec-learned-3.3.jpg";
 import aecLearnedThree4 from "../assets/aec-learned-3.4.jpg";
 import aecLearnedThree5 from "../assets/aec-learned-3.5.jpg";
+import gitHubIcon from "../assets/icon-github.svg";
 
 const Audiophile = () => {
   return (
@@ -45,7 +46,8 @@ const Audiophile = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Source Code
+          <img src={gitHubIcon} alt="github" />
+          <span>Github Repo</span>
         </a>
         <a
           href="https://audiophile-ecommerce-eight.vercel.app/"
@@ -53,7 +55,7 @@ const Audiophile = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Demo
+          <span>Live Demo</span>
         </a>
       </div>
 

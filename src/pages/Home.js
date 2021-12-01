@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useHistory } from "react-router-dom";
 import { ReactComponent as InstagramIcon } from "../assets/icon-instagram.svg";
 import { ReactComponent as TwitterIcon } from "../assets/icon-twitter.svg";
+import { ReactComponent as EmailIcon } from "../assets/icon-email.svg";
+import { ReactComponent as GithubIcon } from "../assets/icon-github-home.svg";
+import { ReactComponent as LinkedInIcon } from "../assets/icon-linkedin.svg";
 
 const Anime = () => {
   const [textOne, setTextOne] = useState(true);
@@ -308,14 +311,57 @@ const Anime = () => {
 
       <ul className="social-links">
         <motion.li variants={socialReveal(0.2)} exit={{ opacity: 0 }}>
-          <motion.a whileHover={socialHover} href="www.instagram.com">
-            <InstagramIcon />
+          <motion.a
+            whileHover={socialHover}
+            href="https://www.linkedin.com"
+            rel="noreferrer"
+            taget="_blank"
+          >
+            <LinkedInIcon />
           </motion.a>
         </motion.li>
 
         <motion.li variants={socialReveal(0.5)} exit={{ opacity: 0 }}>
-          <motion.a whileHover={socialHover} href="www.twitter.com">
+          <motion.a
+            whileHover={socialHover}
+            href="https://www.twitter.com"
+            rel="noreferrer"
+            taget="_blank"
+          >
             <TwitterIcon />
+          </motion.a>
+        </motion.li>
+
+        <motion.li variants={socialReveal(0.8)} exit={{ opacity: 0 }}>
+          <motion.a
+            whileHover={socialHover}
+            href="https://www.instagram.com"
+            rel="noreferrer"
+            taget="_blank"
+          >
+            <InstagramIcon />
+          </motion.a>
+        </motion.li>
+
+        <motion.li variants={socialReveal(1.1)} exit={{ opacity: 0 }}>
+          <motion.a
+            whileHover={socialHover}
+            href="https://www.github.com"
+            rel="noreferrer"
+            taget="_blank"
+          >
+            <GithubIcon />
+          </motion.a>
+        </motion.li>
+
+        <motion.li variants={socialReveal(1.4)} exit={{ opacity: 0 }}>
+          <motion.a
+            whileHover={socialHover}
+            href="https://www.instagram.com"
+            rel="noreferrer"
+            taget="_blank"
+          >
+            <EmailIcon />
           </motion.a>
         </motion.li>
       </ul>
@@ -487,7 +533,7 @@ const StyledAnime = styled(motion.div)`
     z-index: 100;
     position: absolute;
     top: 65%;
-    right: 30%;
+    right: 15%;
 
     li {
       &:not(:first-child) {
@@ -504,14 +550,16 @@ const StyledAnime = styled(motion.div)`
 
         svg {
           transform: scale(2.5);
-          path {
+          path,
+          polygon {
             fill: #1a1a1a;
           }
         }
 
         &:hover {
           svg {
-            path {
+            path,
+            polygon {
               fill: #444444;
             }
           }
@@ -568,7 +616,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      right: 17%;
+      right: 15%;
+      top: 39%;
 
       li {
         button {
@@ -579,7 +628,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      right: 25%;
+      right: 7%;
+      top: 60%;
 
       li {
         a {
@@ -633,7 +683,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      right: 15%;
+      top: 39%;
+      right: 13%;
       li {
         button {
           font-size: 20px;
@@ -647,7 +698,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      right: 22%;
+      top: 60%;
+      right: 7%;
       li {
         a {
           height: 80px;
@@ -699,7 +751,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      right: 15%;
+      right: 12%;
+      top: 39%;
 
       li {
         button {
@@ -710,7 +763,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      right: 25%;
+      top: 60%;
+      right: 5%;
 
       li {
       }
@@ -752,7 +806,7 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      right: 12%;
+      right: 9%;
       top: 40%;
       li {
         button {
@@ -763,7 +817,7 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      right: 20%;
+      right: 5.5%;
       top: 60%;
 
       li {
@@ -874,7 +928,7 @@ const StyledAnime = styled(motion.div)`
     }
 
     .intro-wrapper {
-      top: 17%;
+      top: 14%;
       h4 {
         font-size: 50px;
       }
@@ -888,8 +942,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      top: 35%;
-      right: 16%;
+      top: 32%;
+      right: 13%;
       li {
         button {
           font-size: 30px;
@@ -899,12 +953,12 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      top: 52%;
-      right: 33%;
+      top: 49%;
+      right: 7% !important;
 
       li {
         &:not(:first-child) {
-          margin-left: 30px;
+          margin-left: 38px;
         }
         a {
           height: 90px;
@@ -975,7 +1029,13 @@ const StyledAnime = styled(motion.div)`
 
     .social-links {
       top: 84%;
-      right: 40%;
+      right: 23%;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 35px;
+        }
+      }
     }
   }
 
@@ -1013,6 +1073,7 @@ const StyledAnime = styled(motion.div)`
 
     .social-links {
       top: 80%;
+      right: 11.5% !important;
 
       li {
         margin: 0 10px;
@@ -1056,6 +1117,15 @@ const StyledAnime = styled(motion.div)`
         button {
           padding: 15px 25px;
           font-size: 16px;
+        }
+      }
+    }
+
+    .social-links {
+      right: 13%;
+      li {
+        &:not(:first-child) {
+          margin-left: 38px;
         }
       }
     }
@@ -1104,14 +1174,18 @@ const StyledAnime = styled(motion.div)`
 
     .social-links {
       top: 82%;
+      right: 5.5%;
 
       li {
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
         a {
           height: 60px;
           width: 60px;
 
           svg {
-            transform: scale(2.2);
+            transform: scale(2.1);
           }
         }
       }
@@ -1140,6 +1214,7 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
+      right: 4.5%;
       li {
         &:not(:first-child) {
           margin-left: 20px;
@@ -1166,6 +1241,10 @@ const StyledAnime = styled(motion.div)`
 
     .about-projects {
       right: 15%;
+    }
+
+    .social-links {
+      right: 4.5%;
     }
   }
 
@@ -1219,6 +1298,20 @@ const StyledAnime = styled(motion.div)`
     .about-projects {
       right: 14%;
     }
+
+    .social-links {
+      right: 10%;
+      li {
+        a {
+          height: 45px;
+          width: 45px;
+
+          svg {
+            transform: scale(1.8);
+          }
+        }
+      }
+    }
   }
 
   @media (max-width: 375px) and (min-height: 667px) {
@@ -1235,6 +1328,10 @@ const StyledAnime = styled(motion.div)`
     }
     .about-projects {
       right: 11%;
+    }
+
+    .social-links {
+      right: 10% !important;
     }
   }
 
@@ -1292,6 +1389,7 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
+      right: 4.5%;
       li {
         &:not(:first-child) {
           margin-left: 20px;
@@ -1302,45 +1400,6 @@ const StyledAnime = styled(motion.div)`
 
           svg {
             transform: scale(2);
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 320px) and (min-height: 570px) {
-    .circle-background {
-      right: -75% !important;
-    }
-
-    .intro-wrapper {
-      top: 42%;
-      right: 2%;
-      h4 {
-        font-size: 7vw;
-      }
-    }
-
-    .about-projects {
-      right: 12%;
-      top: 66%;
-
-      li {
-        button {
-          padding: 10px 15px;
-          font-size: 14px;
-        }
-      }
-    }
-
-    .social-links {
-      li {
-        a {
-          height: 40px;
-          width: 40px;
-
-          svg {
-            transform: scale(1.5);
           }
         }
       }
@@ -1426,6 +1485,51 @@ const StyledAnime = styled(motion.div)`
 
     .social-links {
       top: 78%;
+      right: 6.5% !important;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+        a {
+          height: 40px;
+          width: 40px;
+
+          svg {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 320px) and (min-height: 570px) {
+    .circle-background {
+      right: -75% !important;
+    }
+
+    .intro-wrapper {
+      top: 42%;
+      right: 2%;
+      h4 {
+        font-size: 7vw;
+      }
+    }
+
+    .about-projects {
+      right: 12%;
+      top: 66%;
+
+      li {
+        button {
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .social-links {
+      top: 82%;
     }
   }
 
@@ -1462,18 +1566,19 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      top: 62%;
+      top: 63%;
       right: 7%;
     }
 
     .social-links {
+      top: 80%;
       li {
         a {
-          height: 50px;
-          width: 50px;
+          height: 33px;
+          width: 33px;
 
           svg {
-            transform: scale(2);
+            transform: scale(1.5);
           }
         }
       }
@@ -1525,7 +1630,7 @@ const StyledAnime = styled(motion.div)`
 
     .about-projects {
       top: 35%;
-      right: 12%;
+      right: 11%;
       li {
         button {
           font-size: 35px;
@@ -1536,10 +1641,13 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
-      top: 55%;
-      right: 20%;
+      top: 54%;
+      right: 3%;
 
       li {
+        &:not(:first-child) {
+          margin-left: 50px;
+        }
         a {
           height: 120px;
           width: 120px;
@@ -1562,8 +1670,8 @@ const StyledAnime = styled(motion.div)`
     }
 
     .about-projects {
-      top: 37%;
-      right: 13%;
+      top: 39%;
+      right: 11%;
       li {
         &:not(:first-child) {
           margin-left: 60px;
@@ -1576,9 +1684,10 @@ const StyledAnime = styled(motion.div)`
     }
 
     .social-links {
+      top: 60%;
       li {
         &:not(:first-child) {
-          margin-left: 60px;
+          margin-left: 90px;
         }
 
         a {
