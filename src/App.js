@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Switch, Route, useLocation } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
@@ -7,6 +8,10 @@ import AboutMe from "./pages/AboutMe";
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    console.log("Built with grit and determination by a.k.afiq");
+  }, []);
 
   return (
     <div className="App">

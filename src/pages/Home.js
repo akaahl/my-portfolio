@@ -150,7 +150,6 @@ const Anime = () => {
   };
 
   useEffect(() => {
-    console.log("Built with grit and determination by a.k.afiq");
     setTimeout(() => {
       setWrapper(false);
     }, 2000);
@@ -309,7 +308,7 @@ const Anime = () => {
         <motion.li variants={socialReveal(0.2)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/a-k-afiq-bb9729227/"
             rel="noreferrer"
             target="_blank"
           >
