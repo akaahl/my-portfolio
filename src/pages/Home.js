@@ -305,17 +305,13 @@ const Anime = () => {
         </motion.li>
       </ul>
 
-      {/* <motion.h4 className="connect" >
-        Let's connect
-      </motion.h4> */}
-
       <ul className="social-links">
         <motion.li variants={socialReveal(0.2)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
             href="https://www.linkedin.com"
             rel="noreferrer"
-            taget="_blank"
+            target="_blank"
           >
             <LinkedInIcon />
           </motion.a>
@@ -324,9 +320,9 @@ const Anime = () => {
         <motion.li variants={socialReveal(0.5)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
-            href="https://www.twitter.com"
+            href="https://twitter.com/akaahl1"
             rel="noreferrer"
-            taget="_blank"
+            target="_blank"
           >
             <TwitterIcon />
           </motion.a>
@@ -335,9 +331,9 @@ const Anime = () => {
         <motion.li variants={socialReveal(0.8)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/a.k.a.a.h.l/"
             rel="noreferrer"
-            taget="_blank"
+            target="_blank"
           >
             <InstagramIcon />
           </motion.a>
@@ -346,9 +342,9 @@ const Anime = () => {
         <motion.li variants={socialReveal(1.1)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
-            href="https://www.github.com"
+            href="https://github.com/akaahl"
             rel="noreferrer"
-            taget="_blank"
+            target="_blank"
           >
             <GithubIcon />
           </motion.a>
@@ -357,9 +353,9 @@ const Anime = () => {
         <motion.li variants={socialReveal(1.4)} exit={{ opacity: 0 }}>
           <motion.a
             whileHover={socialHover}
-            href="https://www.instagram.com"
+            href="mailto:a.k.afiq@live.com"
             rel="noreferrer"
-            taget="_blank"
+            target="_blank"
           >
             <EmailIcon />
           </motion.a>
@@ -537,7 +533,7 @@ const StyledAnime = styled(motion.div)`
 
     li {
       &:not(:first-child) {
-        margin-left: 25px;
+        margin-left: 35px;
       }
 
       a {
@@ -767,6 +763,9 @@ const StyledAnime = styled(motion.div)`
       right: 5%;
 
       li {
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
       }
     }
   }
